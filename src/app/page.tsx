@@ -101,7 +101,7 @@ export default function CasinoLanding() {
               }`}
             >
               <button
-                className="pulse-scale bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-medium py-3 px-6 md:py-5 md:px-21 rounded-lg w-68 md:w-105 text-center transition-all duration-200 shadow-[0_0_16px_0_rgba(255,230,28,0.4)] hover:shadow-[0_0_32px_4px_rgba(255,230,28,0.6)] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#FFE61C] focus:ring-offset-2 whitespace-nowrap flex items-center justify-center text-xl md:text-2xl"
+                className="pulse-scale bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-6 md:py-5 md:px-21 rounded-lg w-68 md:w-105 text-center transition-all duration-200 shadow-[0_0_16px_0_rgba(255,230,28,0.4)] hover:shadow-[0_0_32px_4px_rgba(255,230,28,0.6)] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#FFE61C] focus:ring-offset-2 whitespace-nowrap flex items-center justify-center text-xl md:text-2xl"
                 onClick={handleButtonClick}
                 data-gtm="resgatar-codigo-btn"
               >
@@ -511,7 +511,7 @@ export default function CasinoLanding() {
         <div className="bg-[#1e2130] rounded-xl p-8 mb-12">
           <div className="flex justify-center mb-6">
             <div className="bg-[#FFE61C] text-black px-8 py-3 rounded-lg flex items-center gap-3 font-medium text-lg">
-              Atenção{" "}
+              <a>Atenção </a>
               <span className="inline-block w-6 h-6 bg-black text-[#FFE61C] rounded-full text-center font-bold leading-tight">
                 !
               </span>
