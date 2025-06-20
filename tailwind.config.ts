@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         bondia: ["Bondia", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       letterSpacing: {
         tightest: "-.05em",
