@@ -39,7 +39,7 @@ export default function CasinoLanding() {
     setShowPopup(true);
     navigator.clipboard.writeText(code);
     setTimeout(() => {
-      window.location.href = "https://wjcasino.bet.br/?aptwjcasino";
+      window.location.href = "https://wjcasino.bet.br/register";
     }, 5000);
   }
 
