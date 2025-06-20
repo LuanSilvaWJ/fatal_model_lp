@@ -89,7 +89,7 @@ export default function CasinoLanding() {
           >
             <Image
               src={isMobile ? "/fortune-gems-mobile.jpg" : "/fortune-gems.jpg"}
-              alt="Fortune God"
+              alt="Fortune Gems"
               fill
               className="object-cover"
             />
