@@ -74,7 +74,7 @@ export default function CasinoLanding() {
           alt="WJCasino"
           width={300}
           height={67}
-          className="h-12 w-auto"
+          className="h-auto w-55"
         />
       </header>
 
