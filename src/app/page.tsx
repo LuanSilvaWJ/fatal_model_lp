@@ -10,7 +10,7 @@ export default function CasinoLanding() {
   const [isMobile, setIsMobile] = useState(false);
   const [counter, setCounter] = useState(5);
   const [isFaqOpen, setIsFaqOpen] = useState(false);
-  const code = "wjcasinoxmoneypot";
+  const code = "FestaJuninaWJ"; 
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
