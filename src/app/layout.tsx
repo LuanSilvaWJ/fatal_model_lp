@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Giros Grátis WJCasino - Money Pot",
+  title: "Giros Grátis WJCasino - Money Pot v4",
   description: "Resgate seu código e ganhe giros grátis no WJCasino!",
 };
 
