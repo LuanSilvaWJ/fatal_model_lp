@@ -428,7 +428,7 @@ export default function CasinoLanding() {
                     CASHBACK SEMANAL
                   </Link>
                   <p className="text-white text-base">
-                    Receba 26% de volta em todas
+                    Receba até 26% de volta em todas
                     <br />
                     as suas apostas semanalmente.
                   </p>
@@ -546,38 +546,49 @@ export default function CasinoLanding() {
               <p className="mb-4">
                 <strong>1. Qual o período da campanha?</strong>
                 <br />A campanha é válida de{" "}
-                <strong>01/05/2025 a 31/05/2025.</strong>
+                <strong>01/07/2025 a 31/07/2025.</strong>
               </p>
               <p className="mb-4">
                 <strong>2. O código é único para cada usuário?</strong>
                 <br />
                 <strong>Sim.</strong> Cada código é{" "}
-                <strong>individual e exclusivo</strong> para cada usuário e não
-                pode ser transferido.
+                <strong>individual e exclusivo</strong> sendo <strong>intransferível</strong> para outros usuários.
               </p>
               <p className="mb-4">
                 <strong>3. Quantos jogadores podem resgatar o código?</strong>
                 <br />O código é válido apenas para os{" "}
-                <strong>primeiros 1.000 jogadores.</strong>
+                <strong>primeiros mil jogadores.</strong>
               </p>
               <p className="mb-4">
                 <strong>
-                  4. Cada jogador pode usar o código mais de uma vez?
+                  4. O código pode ser usado mais de uma vez?
                 </strong>
                 <br />
                 <strong>Não.</strong> Cada jogador tem direito a{" "}
-                <strong>uma única utilização</strong> do código para obter o
-                giro grátis.
+                <strong>uma única utilização</strong>
               </p>
               <p>
-                <strong>5. A campanha pode ser alterada?</strong>
+                <strong>5. Como sacar os meus ganhos?</strong>
                 <br />
-                <strong>Sim.</strong> O <strong>WJ Casino</strong> se reserva o
-                direito de alterar os Termos e Condições da campanha a qualquer
-                momento.
+                Após aplicar o código dentro da plataforma e receber cinco spins, <strong>você precisa jogar mais 25 vezes no mesmo jogo</strong> para sacar os seus ganhos.
+                <br />
+                <br />
               </p>
+              <p>
+                <strong>6. A campanha pode ser alterada?</strong>
+                <br />
+                <strong>Sim.</strong> A <strong>WJ Casino</strong> pode alterar os Termos e Condições da campanha a qualquer momento.
+              </p>             
+              
+
             </div>
           )}
+          <div className="text-center">
+          <p className="font-bold text-lg">Regras:</p>
+          <p>
+            Após aplicar o código dentro da plataforma e receber cinco spins, você precisa jogar mais 25 vezes no mesmo jogo para sacar os seus ganhos.
+          </p>
+        </div>
         </div>
 
         {}
