@@ -10,7 +10,7 @@ export default function CasinoLanding() {
   const [isMobile, setIsMobile] = useState(false);
   const [counter, setCounter] = useState(5);
   const [isFaqOpen, setIsFaqOpen] = useState(false);
-  const code = "FestaJuninaWJ"; 
+  const code = "WJFatalGems"; 
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -39,7 +39,7 @@ export default function CasinoLanding() {
     setShowPopup(true);
     navigator.clipboard.writeText(code);
     setTimeout(() => {
-      window.location.href = "https://wjcasino.bet.br/br/web/?PPPush04#/register";
+      window.location.href = "https://go.aff.wjafiliado.com/uwdxxhsn?afp=Fatal_Model";
     }, 5000);
   }
 
@@ -88,7 +88,7 @@ export default function CasinoLanding() {
             } flex items-center justify-center`}
           >
             <Image
-              src={isMobile ? "/fortune-gems-mobile.jpg" : "/fortune-gems.jpg"}
+              src={isMobile ? "/Banner_LP_MOBILE.png" : "/Banner_LP.png"}
               alt="Fortune Gems"
               fill
               className="object-cover"
@@ -101,7 +101,7 @@ export default function CasinoLanding() {
               }`}
             >
               <button
-                className="pulse-scale bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-6 md:py-5 md:px-21 rounded-lg w-68 md:w-105 text-center transition-all duration-200 shadow-[0_0_16px_0_rgba(255,230,28,0.4)] hover:shadow-[0_0_32px_4px_rgba(255,230,28,0.6)] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#FFE61C] focus:ring-offset-2 whitespace-nowrap flex items-center justify-center text-xl md:text-2xl"
+                className="pulse-scale bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-6 md:py-5 md:px-21 rounded-lg w-68 mb-6 md:w-105 text-center transition-all duration-200 shadow-[0_0_16px_0_rgba(255,230,28,0.4)] hover:shadow-[0_0_32px_4px_rgba(255,230,28,0.6)] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#029837] focus:ring-offset-2 whitespace-nowrap flex items-center justify-center text-xl md:text-2xl"
                 onClick={handleButtonClick}
                 data-gtm="resgatar-codigo-btn"
               >
@@ -122,19 +122,19 @@ export default function CasinoLanding() {
             </h2>
             <ol className="space-y-4 mb-4">
               <li className="flex items-center gap-4 bg-[#181920] rounded-full px-6 py-3 text-lg text-white font-medium">
-                <span className="bg-yellow-400 text-black rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl border-4 border-[#181920]">
+                <span className="bg-green-700 text-black rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl border-4 border-[#181920]">
                   1
                 </span>
                 Clique no ícone de engrenagem
               </li>
               <li className="flex items-center gap-4 bg-[#181920] rounded-full px-6 py-3 text-lg text-white font-medium">
-                <span className="bg-yellow-400 text-black rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl border-4 border-[#181920]">
+                <span className="bg-green-700 text-black rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl border-4 border-[#181920]">
                   2
                 </span>
                 Clique no ícone de presente
               </li>
               <li className="flex items-center gap-4 bg-[#181920] rounded-full px-6 py-3 text-lg text-white font-medium">
-                <span className="bg-yellow-400 text-black rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl border-4 border-[#181920]">
+                <span className="bg-green-700 text-black rounded-full w-10 h-10 flex items-center justify-center font-bold text-xl border-4 border-[#181920]">
                   3
                 </span>
                 Cole o código e confirme
@@ -195,7 +195,7 @@ export default function CasinoLanding() {
                 <button
                   key={idx}
                   className={`w-3 h-3 rounded-full ${
-                    carouselIndex === idx ? "bg-yellow-400" : "bg-gray-500"
+                    carouselIndex === idx ? "bg-green-700" : "bg-gray-500"
                   } transition-all`}
                   onClick={() => setCarouselIndex(idx)}
                   aria-label={`Ir para o slide ${idx + 1}`}
@@ -240,7 +240,7 @@ export default function CasinoLanding() {
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                          className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                         >
                           SAQUES RÁPIDOS
                         </Link>
@@ -276,7 +276,7 @@ export default function CasinoLanding() {
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                          className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                         >
                           CASHBACK SEMANAL
                         </Link>
@@ -312,7 +312,7 @@ export default function CasinoLanding() {
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                          className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                         >
                           AS MELHORES ODDS
                         </Link>
@@ -348,7 +348,7 @@ export default function CasinoLanding() {
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                          className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                         >
                           GRUPO NO TELEGRAM
                         </Link>
@@ -388,7 +388,7 @@ export default function CasinoLanding() {
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                    className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                   >
                     SAQUES RÁPIDOS
                   </Link>
@@ -423,7 +423,7 @@ export default function CasinoLanding() {
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                    className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                   >
                     CASHBACK SEMANAL
                   </Link>
@@ -458,7 +458,7 @@ export default function CasinoLanding() {
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                    className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                   >
                     AS MELHORES ODDS
                   </Link>
@@ -493,7 +493,7 @@ export default function CasinoLanding() {
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#FFE61C] hover:bg-[#e6cf19] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
+                    className="bg-[#029837] hover:bg-[#028030] text-black font-bold py-3 px-5 rounded-lg w-full mb-4 text-base block"
                   >
                     GRUPO NO TELEGRAM
                   </Link>
@@ -508,11 +508,17 @@ export default function CasinoLanding() {
         </div>
 
         {}
+        <div className="text-center mb-6">
+          <p className="font-bold text-lg">Regras:</p>
+          <p>
+            Após aplicar o código dentro da plataforma e receber cinco spins, você precisa jogar mais 25 vezes no mesmo jogo para sacar os seus ganhos.
+          </p>
+        </div>
         <div className="bg-[#1e2130] rounded-xl p-8 mb-12">
           <div className="flex justify-center mb-6">
-            <div className="bg-[#FFE61C] text-black px-8 py-3 rounded-lg flex items-center gap-3 font-medium text-lg">
+            <div className="bg-[#029837] text-black px-8 py-3 rounded-lg flex items-center gap-3 font-medium text-lg">
               <a>Atenção </a>
-              <span className="inline-block w-6 h-6 bg-black text-[#FFE61C] rounded-full text-center font-bold leading-tight">
+              <span className="inline-block w-6 h-6 bg-black text-[#029837] rounded-full text-center font-bold leading-tight">
                 !
               </span>
             </div>
@@ -528,9 +534,10 @@ export default function CasinoLanding() {
         </div>
 
         {}
+        
         <div className="flex flex-col items-center mb-12 space-y-4">
           <button
-            className="text-white flex items-center gap-3 text-lg bg-transparent hover:bg-[#e6cf19]/20 px-6 py-3 rounded-lg transition-all duration-200"
+            className="text-white flex items-center gap-3 text-lg bg-transparent hover:bg-[#38b558]/20 px-6 py-3 rounded-lg transition-all duration-200"
             onClick={toggleFaq}
           >
             Consulte nosso FAQ
@@ -583,12 +590,7 @@ export default function CasinoLanding() {
 
             </div>
           )}
-          <div className="text-center">
-          <p className="font-bold text-lg">Regras:</p>
-          <p>
-            Após aplicar o código dentro da plataforma e receber cinco spins, você precisa jogar mais 25 vezes no mesmo jogo para sacar os seus ganhos.
-          </p>
-        </div>
+          
         </div>
 
         {}
@@ -603,7 +605,7 @@ export default function CasinoLanding() {
           </p>
           <div className="flex justify-center items-center gap-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-transparent border-2 border-[#f5c747] flex items-center justify-center text-[#f5c747] font-bold text-lg">
+              <div className="w-12 h-12 rounded-full bg-transparent border-2 border-[#029837] flex items-center justify-center text-[#029837] font-bold text-lg">
                 <span className="mr-[1px]">+18</span>
               </div>
               <div className="text-left text-xs">
@@ -617,7 +619,7 @@ export default function CasinoLanding() {
               passHref
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-[#f5c747] text-xs underline transition-colors duration-200"
+              className="text-white hover:text-[#38b558] text-xs underline transition-colors duration-200"
             >
               Termos e condições
             </Link>
@@ -630,8 +632,8 @@ export default function CasinoLanding() {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50 p-4">
           {" "}
           {}
-          <div className="bg-[#23263a] rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl border-4 border-[#EDB436] relative animate-fade-in">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#EDB436] rounded-full p-3 shadow-lg">
+          <div className="bg-[#23263a] rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl border-4 border-[#029837] relative animate-fade-in">
+            <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-[#029837] rounded-full p-3 shadow-lg">
               <svg
                 width="40"
                 height="40"
@@ -642,16 +644,16 @@ export default function CasinoLanding() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <circle cx="12" cy="12" r="10" fill="#EDB436" />
+                <circle cx="12" cy="12" r="10" fill="#029837" />
                 <path d="M9 12l2 2 4-4" stroke="#23263a" strokeWidth="2.5" />
               </svg>
             </div>
-            <h2 className="text-[#EDB436] text-2xl font-extrabold mb-2 mt-6 drop-shadow">
+            <h2 className="text-[#029837] text-2xl font-extrabold mb-2 mt-6 drop-shadow">
               Código copiado!
             </h2>
             {}
             <div className="flex justify-center mb-4">
-              <div className="bg-[#1a1c25] text-[#EDB436] font-mono text-2xl rounded-lg py-3 px-6 border-2 border-[#EDB436] tracking-widest shadow-inner inline-block">
+              <div className="bg-[#1a1c25] text-[#029837] font-mono text-2xl rounded-lg py-3 px-6 border-2 border-[#029837] tracking-widest shadow-inner inline-block">
                 {" "}
                 {}
                 {code}
@@ -659,11 +661,11 @@ export default function CasinoLanding() {
             </div>
             <p className="text-white mb-3 text-base font-medium">
               Você será redirecionado para o{" "}
-              <span className="text-[#EDB436] font-bold">WJCasino</span> em{" "}
-              <span className="text-[#EDB436] font-bold">{counter}</span>{" "}
+              <span className="text-[#029837] font-bold">WJCasino</span> em{" "}
+              <span className="text-[#029837] font-bold">{counter}</span>{" "}
               segundo{counter === 1 ? "" : "s"}...
             </p>
-            <p className="text-xs text-[#EDB436]">
+            <p className="text-xs text-[#029837]">
               Se não for redirecionado,{" "}
               <a
                 href="https://wjcasino.bet.br/?aptwjcasino"
