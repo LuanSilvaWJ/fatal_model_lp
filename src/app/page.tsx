@@ -226,7 +226,7 @@ export default function CasinoLanding() {
                       >
                         <div className="h-52 overflow-hidden cursor-pointer">
                           <Image
-                            src="/card-bg-1.jpeg"
+                            src="/card-bg-1.png"
                             alt="Saques Rápidos"
                             width={375}
                             height={210}
@@ -374,7 +374,7 @@ export default function CasinoLanding() {
                 >
                   <div className="h-52 overflow-hidden cursor-pointer">
                     <Image
-                      src="/card-bg-1.jpeg"
+                      src="/card-bg-1.png"
                       alt="Saques Rápidos"
                       width={375}
                       height={210}
@@ -508,11 +508,13 @@ export default function CasinoLanding() {
         </div>
 
         {}
-        <div className="text-center mb-6">
-          <p className="font-bold text-lg">Regras:</p>
+        <div className="bg-[#1e2130] rounded-xl p-8 mb-12">
+        <div className="text-center mb-2 color text-white">
+          <p className="font-bold text-3xl mb-2">Regras</p>
           <p>
-            Após aplicar o código dentro da plataforma e receber cinco spins, você precisa jogar mais 25 vezes no mesmo jogo para sacar os seus ganhos.
+            Após aplicar o código dentro da plataforma e receber dez spins, você precisa jogar mais 20 vezes no mesmo jogo para sacar os seus ganhos.
           </p>
+        </div>
         </div>
         <div className="bg-[#1e2130] rounded-xl p-8 mb-12">
           <div className="flex justify-center mb-6">
@@ -553,7 +555,7 @@ export default function CasinoLanding() {
               <p className="mb-4">
                 <strong>1. Qual o período da campanha?</strong>
                 <br />A campanha é válida de{" "}
-                <strong>01/07/2025 a 31/07/2025.</strong>
+                <strong>12/09/2025 a 12/01/2026.</strong>
               </p>
               <p className="mb-4">
                 <strong>2. O código é único para cada usuário?</strong>
@@ -564,7 +566,7 @@ export default function CasinoLanding() {
               <p className="mb-4">
                 <strong>3. Quantos jogadores podem resgatar o código?</strong>
                 <br />O código é válido apenas para os{" "}
-                <strong>primeiros mil jogadores.</strong>
+                <strong>primeiros três mil jogadores.</strong>
               </p>
               <p className="mb-4">
                 <strong>
@@ -577,7 +579,7 @@ export default function CasinoLanding() {
               <p>
                 <strong>5. Como sacar os meus ganhos?</strong>
                 <br />
-                Após aplicar o código dentro da plataforma e receber cinco spins, <strong>você precisa jogar mais 25 vezes no mesmo jogo</strong> para sacar os seus ganhos.
+                Após aplicar o código dentro da plataforma e receber dez spins, <strong>você precisa jogar mais 20 vezes no mesmo jogo</strong> para sacar os seus ganhos.
                 <br />
                 <br />
               </p>
