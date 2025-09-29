@@ -83,7 +83,7 @@ export default function CasinoLanding() {
     // Substitui todos os = e & por . em toda a URL, exceto o primeiro ?
     const [baseWithQuery, ...queryParts] = finalUrl.split('?');
     if (queryParts.length > 0) {
-      let modifiedQuery = queryParts.join('?')
+      const modifiedQuery = queryParts.join('?')
         .replace(/=&/g, '.')     // Substitui =& por .
         .replace(/\.+/g, '.')    // Remove pontos duplos/múltiplos
         .replace(/^\.|\.$/g, '')  // Remove pontos no início e no final
