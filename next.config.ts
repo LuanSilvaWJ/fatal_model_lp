@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  images: { unoptimized: true }
+  // Removido output: 'export' para usar SSG padrão da Vercel
+  images: { unoptimized: true },
+  trailingSlash: false
 };
 
 export default nextConfig;
