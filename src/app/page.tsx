@@ -47,23 +47,6 @@ export default function CasinoLanding() {
     }
   }, [showPopup]);
 
-  // Função para construir URL com parâmetros de afiliado
-  function buildAffiliateURL(baseURL: string) {
-    const params = getAffiliateParams();
-    if (!params || Object.keys(params).length === 0) {
-      return baseURL;
-    }
-
-    const url = new URL(baseURL);
-    Object.entries(params).forEach(([key, value]) => {
-      if (value) {
-        url.searchParams.set(key, value);
-      }
-    });
-    
-    return url.toString();
-  }
-
   // Função especial para o link TAP "clique aqui" 
   function buildAffiliateURLWithReplace(baseURL: string) {
     const params = getAffiliateParams();
