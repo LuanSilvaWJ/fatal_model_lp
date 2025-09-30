@@ -64,46 +64,31 @@ export default function CasinoLanding() {
     return url.toString();
   }
 
-  // Função especial para o link "clique aqui" com substituição de caracteres
+  // Função especial para o link TAP "clique aqui" 
   function buildAffiliateURLWithReplace(baseURL: string) {
     const params = getAffiliateParams();
     if (!params || Object.keys(params).length === 0) {
       return baseURL;
     }
 
+    // Para TAP, enviamos os parâmetros originais para que {{utm_campaign}} funcione
     const url = new URL(baseURL);
+    
+    // Adiciona os parâmetros exatamente como capturados para que a TAP possa usar {{utm_campaign}}
     Object.entries(params).forEach(([key, value]) => {
-      if (value && value.trim() !== '') {  // Só adiciona se o valor não estiver vazio
+      if (value && value.trim() !== '') {
         url.searchParams.set(key, value);
       }
     });
     
-    let finalUrl = url.toString();
-    
-    // Substitui todos os = e & por . em toda a URL, exceto o primeiro ?
-    const [baseWithQuery, ...queryParts] = finalUrl.split('?');
-    if (queryParts.length > 0) {
-      const modifiedQuery = queryParts.join('?')
-        .replace(/=&/g, '.')     // Substitui =& por .
-        .replace(/\.+/g, '.')    // Remove pontos duplos/múltiplos
-        .replace(/^\.|\.$/g, '')  // Remove pontos no início e no final
-        
-      
-      // Mantém a query no formato pontuado e adiciona & no final para evitar problemas com =
-      finalUrl = modifiedQuery
-        ? `${baseWithQuery}?${modifiedQuery}&`
-        : baseWithQuery;
-    }
-    
-    // Retorna a URL com & no final (não remove o &)
-    return finalUrl;
+    return url.toString();
   }
 
   function handleButtonClick() {
     setShowPopup(true);
     navigator.clipboard.writeText(code);
     setTimeout(() => {
-      window.location.href = "https://go.aff.wjafiliado.com/uwdxxhsn?afp=Fatal_Model";
+      window.location.href = buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels");
     }, 5000);
   }
 
@@ -283,7 +268,7 @@ export default function CasinoLanding() {
                   {i === 1 && (
                     <>
                       <Link
-                        href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                        href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                         passHref
                         target="_blank"
                         rel="noopener noreferrer"
@@ -300,7 +285,7 @@ export default function CasinoLanding() {
                       </Link>
                       <div className="p-5 text-center">
                         <Link
-                          href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                          href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
@@ -319,7 +304,7 @@ export default function CasinoLanding() {
                   {i === 2 && (
                     <>
                       <Link
-                        href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                        href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                         passHref
                         target="_blank"
                         rel="noopener noreferrer"
@@ -336,7 +321,7 @@ export default function CasinoLanding() {
                       </Link>
                       <div className="p-5 text-center">
                         <Link
-                          href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                          href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
@@ -355,7 +340,7 @@ export default function CasinoLanding() {
                   {i === 3 && (
                     <>
                       <Link
-                        href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                        href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                         passHref
                         target="_blank"
                         rel="noopener noreferrer"
@@ -372,7 +357,7 @@ export default function CasinoLanding() {
                       </Link>
                       <div className="p-5 text-center">
                         <Link
-                          href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                          href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
@@ -391,7 +376,7 @@ export default function CasinoLanding() {
                   {i === 4 && (
                     <>
                       <Link
-                        href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                        href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                         passHref
                         target="_blank"
                         rel="noopener noreferrer"
@@ -408,7 +393,7 @@ export default function CasinoLanding() {
                       </Link>
                       <div className="p-5 text-center">
                         <Link
-                          href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                          href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                           passHref
                           target="_blank"
                           rel="noopener noreferrer"
@@ -431,7 +416,7 @@ export default function CasinoLanding() {
               {/* Card 1 */}
               <div className="bg-[#1e2130] rounded-xl overflow-hidden">
                 <Link
-                  href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                  href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                   passHref
                   target="_blank"
                   rel="noopener noreferrer"
@@ -448,7 +433,7 @@ export default function CasinoLanding() {
                 </Link>
                 <div className="p-5 text-center">
                   <Link
-                    href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                    href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
@@ -466,7 +451,7 @@ export default function CasinoLanding() {
               {/* Card 2 */}
               <div className="bg-[#1e2130] rounded-xl overflow-hidden">
                 <Link
-                  href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                  href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                   passHref
                   target="_blank"
                   rel="noopener noreferrer"
@@ -483,7 +468,7 @@ export default function CasinoLanding() {
                 </Link>
                 <div className="p-5 text-center">
                   <Link
-                    href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                    href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
@@ -501,7 +486,7 @@ export default function CasinoLanding() {
               {/* Card 3 */}
               <div className="bg-[#1e2130] rounded-xl overflow-hidden">
                 <Link
-                  href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                  href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                   passHref
                   target="_blank"
                   rel="noopener noreferrer"
@@ -518,7 +503,7 @@ export default function CasinoLanding() {
                 </Link>
                 <div className="p-5 text-center">
                   <Link
-                    href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                    href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
@@ -536,7 +521,7 @@ export default function CasinoLanding() {
               {/* Card 4 */}
               <div className="bg-[#1e2130] rounded-xl overflow-hidden">
                 <Link
-                  href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                  href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                   passHref
                   target="_blank"
                   rel="noopener noreferrer"
@@ -553,7 +538,7 @@ export default function CasinoLanding() {
                 </Link>
                 <div className="p-5 text-center">
                   <Link
-                    href={buildAffiliateURL("https://wjcasino.bet.br/?aptwjcasino")}
+                    href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                     passHref
                     target="_blank"
                     rel="noopener noreferrer"
@@ -681,7 +666,7 @@ export default function CasinoLanding() {
             </div>
             {}
             <Link
-              href={buildAffiliateURL("https://wjcasino.bet.br/br/web/terms")}
+              href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
               passHref
               target="_blank"
               rel="noopener noreferrer"
@@ -734,7 +719,7 @@ export default function CasinoLanding() {
             <p className="text-xs text-[#029837]">
               Se não for redirecionado,{" "}
               <a
-                href={buildAffiliateURLWithReplace("https://wjcasino.bet.br/?aptwjcasino")}
+                href={buildAffiliateURLWithReplace("https://go.aff.wjafiliado.com/wjfatalmodels")}
                 className="underline"
               >
                 clique aqui
